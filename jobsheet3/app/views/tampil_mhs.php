@@ -6,7 +6,7 @@
 ?>
 
 <h3>Data Mahasiswa</h3>
-<a href="input_mhs.php">Tambah Mahasiswa</a>
+<a href="input_mhs.php?aksi=update">Tambah Mahasiswa</a>
 <table border="1">
     <tr>
         <th>NO : </th>
@@ -25,8 +25,8 @@
         <td><?php echo $x['nama'] ?></td>
         <td><?php echo $x['alamat'] ?></td>
         <td>
-            <a href="edit_mhs.php?id=<?php echo $x['id'];?>">Edit</a>
-            <a href="hapus_mhs.php">Hapus</a>
+            <a href="edit_mhs.php?id=<?php echo $x['id'];?>$aksi=edit">Edit</a>
+            <a href="proses_mhs.php?id=<?php echo $x['id'];?>$aksi=hapus">Hapus</a>
         </td>
     </tr>
     <?php

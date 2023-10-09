@@ -5,7 +5,7 @@ $db = new database;
 
 <h3>Edit data Mahasiswa</h3>
 
-<form action="update.php?aksi=update" method="post">
+<form action="proses_mhs.php?aksi=update" method="post">
     <?php
         foreach ($db->edit($_GET['id']) as $d){
 
